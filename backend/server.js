@@ -3,6 +3,7 @@ const cors = require('cors');
 require('dotenv').config();
 const { supabase } = require('./config/supabase');
 const menuRoutes = require('./routes/menu');
+const reservationsRoutes = require('./routes/reservations');
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 // Rotas
 app.use('/api/menu', menuRoutes);
+app.use('/api/reservations', reservationsRoutes);
 
 // Teste de conexão com Supabase
 app.get('/api/health', async (req, res) => {

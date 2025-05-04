@@ -23,7 +23,7 @@ const Footer = () => {
                 <Instagram size={24} />
               </a>
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/restaurantegarraazuloficial" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white hover:text-garra-gold transition-colors"

@@ -94,7 +94,7 @@ const Menu = () => {
         name: "Vinho Branco da Casa",
         description: "Taça de vinho branco selecionado pelo sommelier, perfeito para acompanhar frutos do mar",
         price: "R$ 32,00",
-        featured: true,
+        featured: false,
         image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       },
     ],

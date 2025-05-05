@@ -7,8 +7,6 @@ import Menu from '@/components/Menu';
 import Contact from '@/components/Contact';
 import Location from '@/components/Location';
 import Footer from '@/components/Footer';
-import WhatsAppButton from '@/components/WhatsAppButton';
-
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -19,7 +17,6 @@ const Index = () => {
       <Contact />
       <Location />
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 };

@@ -162,23 +162,20 @@ const Contact = () => {
               <div className="space-y-4">
                 <div>
                   <p className="font-semibold text-garra-navy">Endereço:</p>
-                  <p>R. Dep. Fernando Viégas, 20 - Ponta das Canas, Florianópolis - SC, 88054-700</p>
+                  <p>R. Dep. Fernando Viégas, 20 - Ponta das Canas, Florianópolis - SC, 88056-730</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-garra-navy">Telefone:</p>
-                  <p>(48) 9125-1018</p>
+                  <p> (48) 3091-0469</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold text-garra-navy">Email:</p>
-                  <p>contato@garraazul.com.br</p>
+                  <p>restaurantegarraazul@gmail.com</p>
                 </div>
                 
-                <div>
-                  <p className="font-semibold text-garra-navy">Horário de Funcionamento:</p>
-                  <p>Todos os dias: 11h às 23h</p>
-                </div>
+
               </div>
             </div>
             

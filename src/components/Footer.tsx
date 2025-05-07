@@ -37,16 +37,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contato</h3>
             <ul className="space-y-2">
-              <li>(48) 9125-1018</li>
-              <li>contato@garraazul.com.br</li>
-              <li>R. Dep. Fernando Viégas, 20 - Ponta das Canas, Florianópolis - SC, 88054-700</li>
+              <li>(48) 3091-0469</li>
+              <li>restaurantegarraazul@gmail.com</li>
+              <li>R. Dep. Fernando Viégas, 20 - Ponta das Canas, Florianópolis - SC, 88056-730</li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-xl font-semibold mb-4">Horário de Funcionamento</h3>
             <ul className="space-y-2">
-              <li>Todos os dias: 11h às 23h</li>
+              <li>Todos os dias: 11h às 18h</li>
             </ul>
           </div>
         </div>

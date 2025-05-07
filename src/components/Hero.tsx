@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import '../styles/fonts.css';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -48,7 +49,7 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container-custom relative z-10 h-full flex flex-col justify-center items-center text-white text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">Garra Azul</h1>
+        <h1 className="text-5xl md:text-7xl hero-title mb-6 animate-fade-in font-[400]">Garra Azul</h1>
         <p className="text-xl md:text-2xl mb-12 max-w-xl animate-fade-in">
           Uma experiência única em gastronomia de frutos do mar
         </p>

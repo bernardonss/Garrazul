@@ -52,7 +52,7 @@ const Location = () => {
               
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <span>Todos os dias: 11 às 23h</span>
+                  <span>Todos os dias: 11 às 18h</span>
                 </div>
               </div>
             </div>

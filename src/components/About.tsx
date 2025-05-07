@@ -70,7 +70,7 @@ const About = () => {
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+              src="/4.png" 
               alt="Chef do restaurante Garra Azul" 
               className="rounded-lg shadow-xl w-full"
             />

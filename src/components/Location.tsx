@@ -32,7 +32,7 @@ const Location = () => {
               <div className="space-y-4">
                 <div>
                   <p className="font-semibold text-garra-navy">Endereço:</p>
-                  <p>R. Dep. Fernando Viégas, 20 - Ponta das Canas, Florianópolis - SC, 88054-700</p>
+                  <p>R. Dep. Fernando Viégas, 20 - Ponta das Canas, Florianópolis - SC, 88056-730</p>
                 </div>
                 
                 <div>

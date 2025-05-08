@@ -36,13 +36,13 @@ const Location = () => {
                 </div>
                 
                 <div>
-                  <p className="font-semibold text-garra-navy">Transporte Público:</p>
-                  <p>Linhas de ônibus disponíveis na região de Ponta das Canas</p>
+                  <p className="font-semibold text-garra-navy">Estacionamento:</p>
+                  <p>Serviço exclusivo de valet (consulte disponibilidade local)</p>
                 </div>
                 
                 <div>
-                  <p className="font-semibold text-garra-navy">Estacionamento:</p>
-                  <p>Estacionamento próximo (consulte disponibilidade local)</p>
+                  <p className="font-semibold text-garra-navy">Transporte Público:</p>
+                  <p>Linhas de ônibus disponíveis na região de Ponta das Canas</p>
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ const Location = () => {
               
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <span>Todos os dias: 11 às 18h</span>
+                  <span>Todos os dias: 11 às 18 horas</span>
                 </div>
               </div>
             </div>

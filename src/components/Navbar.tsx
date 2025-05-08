@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: 'Início', href: '#home' },
     { name: 'Sobre', href: '#about' },
     { name: 'Cardápio', href: '#menu' },
+    { name: 'Eventos', href: '#events' },
     { name: 'Contato', href: '#contact' },
     { name: 'Localização', href: '#location' },
   ];
@@ -36,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-center pl-4">
           <a href="#home" className="block">
             <img 
-              src="/lovable-uploads/51f6fe4c-c7eb-4394-9d48-2ee16ac4a191.png" 
+              src="/logo.png" 
               alt="Garra Azul" 
               className={`h-16 w-auto cursor-pointer transition-all duration-300 ${isScrolled ? 'brightness-90' : 'brightness-100'}`}
             />

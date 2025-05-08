@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container-custom">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold font-playfair mb-4">Garra Azul</h3>
+            <h3 className="text-2xl font-bold font-playfair mb-4">Restaurante Garra Azul</h3>
             <p className="mb-4">Uma experiência única em gastronomia de frutos do mar.</p>
             <div className="flex space-x-4">
               <a 
@@ -37,7 +37,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contato</h3>
             <ul className="space-y-2">
-              <li>(48) 3091-0469</li>
+              <li>(48) 3091-0469 / (48) 9125-1018</li>
               <li>restaurantegarraazul@gmail.com</li>
               <li>R. Dep. Fernando Viégas, 20 - Ponta das Canas, Florianópolis - SC, 88056-730</li>
             </ul>
@@ -46,7 +46,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Horário de Funcionamento</h3>
             <ul className="space-y-2">
-              <li>Todos os dias: 11h às 18h</li>
+              <li>Todos os dias: 11h às 18 horas</li>
             </ul>
           </div>
         </div>

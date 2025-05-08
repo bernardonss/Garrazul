@@ -17,6 +17,14 @@ const Hero = () => {
     {
       image: "3.png",
       alt: "Frutos do mar especiais"
+    },
+    {
+      image: "5.png",
+      alt: "Imagem adicional"
+    },
+    {
+      image: "6.png",
+      alt: "Imagem adicional"
     }
   ];
   
@@ -49,8 +57,8 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container-custom relative z-10 h-full flex flex-col justify-center items-center text-white text-center">
-        <h1 className="text-5xl md:text-7xl hero-title mb-6 animate-fade-in font-[400]">Garra Azul</h1>
-        <p className="text-xl md:text-2xl mb-12 max-w-xl animate-fade-in">
+        <img src="/garra.png" alt="Garra Azul Logo" className="w-auto h-48 md:h-48 animate-fade-in" />
+        <p className="text-xl md:text-2xl mb-16 max-w-xl animate-fade-in">
           Uma experiência única em gastronomia de frutos do mar
         </p>
         

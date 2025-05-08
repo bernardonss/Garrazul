@@ -57,24 +57,24 @@ const Contact = () => {
       setFormError(null);
       setIsLoading(true);
 
-      const response = await fetch('http://localhost:3000/api/reservations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      // Construir a mensagem para WhatsApp
+      const whatsappMessage = `Olá, Garra Azul! Gostaria de fazer uma reserva.
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Erro ao fazer a reserva');
-      }
+Nome: ${formData.name}
+Telefone: ${formData.phone}
+Email: ${formData.email}
+Data: ${formData.date}
+Horário: ${formData.time}
+Número de pessoas: ${formData.guests}
+${formData.message ? `Mensagem: ${formData.message}` : ''}`;
 
-      const data = await response.json();
-      
+      // Abrir WhatsApp com os dados preenchidos
+      const whatsappUrl = `https://wa.me/554891251018?text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappUrl, '_blank');
+
       toast({
-        title: "Reserva recebida!",
-        description: "Entraremos em contato para confirmar sua reserva em breve.",
+        title: "Reserva enviada!",
+        description: "Seus dados foram enviados para o WhatsApp do restaurante. Aguarde a confirmação.",
       });
 
       // Limpar o formulário após o envio bem-sucedido
@@ -167,7 +167,7 @@ const Contact = () => {
                 
                 <div>
                   <p className="font-semibold text-garra-navy">Telefone:</p>
-                  <p> (48) 3091-0469</p>
+                  <p> (48) 3091-0469 / (48) 9125-1018</p>
                 </div>
                 
                 <div>

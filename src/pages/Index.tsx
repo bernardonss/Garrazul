@@ -6,6 +6,7 @@ import About from '@/components/About';
 import Menu from '@/components/Menu';
 import Contact from '@/components/Contact';
 import Location from '@/components/Location';
+import Events from '@/components/Events';
 import Footer from '@/components/Footer';
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <About />
       <Menu />
       <Contact />
+      <Events />
       <Location />
       <Footer />
     </div>

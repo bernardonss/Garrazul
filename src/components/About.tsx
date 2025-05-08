@@ -7,10 +7,10 @@ const About = () => {
   
   const testimonials = [
     {
-      text: "O Garra Azul oferece uma experiência gastronômica única. Os pratos são meticulosamente preparados, o ambiente é acolhedor, e o atendimento é impecável. O 'Garra Azul Frutos do Mar' é simplesmente divino!",
-      author: "Maria Silva",
-      role: "Cliente frequente",
-      link: ""
+      text: "Hoje foi a segunda vez que viemos à praia de Ponta das Canas, e fomos muito bem atendidos pelos garçons, as porções e bebidas são deliciosas, preços ok. O restaurante possui banheiros limpos a disposição. Tem também estacionamento, onde levaram nosso carro, assim que chegamos, e depois trouxeram quando estávamos indo embora.",
+      author: "Evyн Freitαs",
+      role: "Cliente satisfeita",
+      link: "https://maps.app.goo.gl/87KLWMReMFMFVXUaA"
     },
     {
       text: "O restaurante conta com uma parceria de estacionamento que proporciona sossego ao cliente por 25,00. O ambiente é muito limpo, banheiro impecável. O restaurante é organizado e com um atendimento espetacular. A Garçonete Jéssica sempre atenciosa e alegre conosco. Pedimos um combo com camarão, iscas de peixe e batata frita. Combo muito gostoso que alimenta muito bem 4pessoas por 165,00. A praia é sensacional, com um mar calmo e natureza abundante, excelente pra levar crianças. Com certeza voltaremos ao restaurante quando visitarmos ponta das Canas, experiência incrível! Muito obrigado equipe",
@@ -70,12 +70,12 @@ const About = () => {
           
           <div className="relative">
             <img 
-              src="/4.png" 
+              src="4.png" 
               alt="Chef do restaurante Garra Azul" 
               className="rounded-lg shadow-xl w-full"
             />
             <div className="absolute -bottom-8 -left-8 bg-garra-gold p-6 rounded-lg shadow-lg hidden md:block">
-              <p className="text-white font-semibold text-xl">11+ anos de história</p>
+              <p className="text-white font-semibold text-xl">13+ anos de história</p>
             </div>
           </div>
         </div>
@@ -133,37 +133,39 @@ const About = () => {
               </div>
               
               {testimonials.length > 1 && (
-                <div className="flex justify-center gap-4 mt-8">
-                  <button 
-                    onClick={prevTestimonial}
-                    className="bg-white rounded-full p-2 shadow-md hover:bg-garra-gold hover:text-white transition-colors"
-                    aria-label="Depoimento anterior"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                  </button>
-                  <div className="flex items-center gap-2">
-                    {testimonials.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setActiveTestimonial(index)}
-                        className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                          index === activeTestimonial ? 'bg-garra-gold' : 'bg-gray-300'
-                        }`}
-                        aria-label={`Depoimento ${index + 1}`}
-                      />
-                    ))}
+                <div className="flex justify-center mt-8">
+                  <div className="flex items-center space-x-4">
+                    <button 
+                      onClick={prevTestimonial}
+                      className="bg-white rounded-full p-2 shadow-md hover:bg-garra-gold hover:text-white transition-colors"
+                      aria-label="Depoimento anterior"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </button>
+                    <div className="flex space-x-2">
+                      {testimonials.map((_, index) => (
+                        <button
+                          key={index}
+                          onClick={() => setActiveTestimonial(index)}
+                          className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                            index === activeTestimonial ? 'bg-garra-gold' : 'bg-gray-300'
+                          }`}
+                          aria-label={`Depoimento ${index + 1}`}
+                        />
+                      ))}
+                    </div>
+                    <button 
+                      onClick={nextTestimonial}
+                      className="bg-white rounded-full p-2 shadow-md hover:bg-garra-gold hover:text-white transition-colors"
+                      aria-label="Próximo depoimento"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
                   </div>
-                  <button 
-                    onClick={nextTestimonial}
-                    className="bg-white rounded-full p-2 shadow-md hover:bg-garra-gold hover:text-white transition-colors"
-                    aria-label="Próximo depoimento"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
                 </div>
               )}
             </Card>

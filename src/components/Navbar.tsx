@@ -39,7 +39,7 @@ const Navbar = () => {
             <img 
               src="/logo.png" 
               alt="Garra Azul" 
-              className={`h-16 w-auto cursor-pointer transition-all duration-300 ${isScrolled ? 'brightness-90' : 'brightness-100'}`}
+              className={`h-16 w-auto cursor-pointer transition-all duration-300 ${isScrolled ? 'brightness-90' : 'brightness-100'} object-contain`}
             />
           </a>
         </div>
